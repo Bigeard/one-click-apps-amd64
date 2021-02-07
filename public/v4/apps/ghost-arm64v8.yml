@@ -18,7 +18,7 @@ services:
             SMTP_PORT: $$cap_ghost_smtp_port
             SMTP_SERVICE: $$cap_ghost_smtp_service
             SMTP_USER: $$cap_ghost_smtp_user
-        image: amd64/ghost:$$cap_ghost_version
+        image: arm64v8/ghost:$$cap_ghost_version
         restart: always
         volumes:
             - $$cap_appname-data:/bitnami
@@ -31,7 +31,7 @@ services:
             MARIADB_ROOT_PASSWORD: $$cap_db_password
             MARIADB_ROOT_USER: $$cap_db_user
             MARIADB_USER: ghost
-        image: amd64/mariadb:10.1
+        image: arm64v8/mariadb:10.1
         restart: always
         volumes:
             - $$cap_appname-mariadb-data:/bitnami
@@ -39,7 +39,7 @@ services:
             notExposeAsWebApp: 'true'
 caproverOneClickApp:
     variables:
-        - defaultValue: 2.38.3
+        - defaultValue: 2.38
           description: Check out their Docker page for the valid tags https://hub.docker.com/r/bitnami/ghost/tags
           id: $$cap_ghost_version
           label: Ghost Version
