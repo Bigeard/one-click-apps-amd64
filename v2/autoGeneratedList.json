@@ -1,1 +1,1 @@
-{"appList":["ghost-amd64"],"appDetails":[{"name":"ghost-amd64","displayName":"Ghost-amd64","description":"Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License","isOfficial":true,"logoUrl":"ghost-amd64.png"}]}
+{"appList":["ghost-arm64v8"],"appDetails":[{"name":"ghost-arm64v8","displayName":"Ghost-arm64v8","description":"Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License","isOfficial":true,"logoUrl":"ghost-arm64v8.png"}]}
